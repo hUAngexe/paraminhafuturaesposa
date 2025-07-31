@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Dia dos Namorados!</title>
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 60px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      color: #ff3366;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff1493;
+    }
+
+    img {
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    details summary {
+      font-size: 22px;
+      color: #ff3366;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    details p {
+      font-size: 16px;
+      color: #333;
+      margin: 10px auto;
+      max-width: 600px;
+    }
+
+    .footer-msg {
+      margin-bottom: 200px;
+      font-style: italic;
+      color: #777;
+    }
+
+    /* Corações */
+    .heart {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      transform: rotate(45deg);
+      animation: float 4s linear infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-600px) rotate(45deg);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="font-size: 50px;">Feliz Dia dos Namorados, meu amor! ❤️</h1>
+  <h2 style="font-size: 20px;">Você é a pessoa mais incrível e especial do mundo, e eu te amo demais! 🥰</h2>
+
+  <img src="nós.jpeg" alt="Nossa foto" width="250">
+
+  <details>
+    <summary>Não clique aqui de FORMA ALGUMA! 🎁</summary>
+    <h2>CURIOSA EIN BRANQUELA? 😆</h2>
+    <p>Mas... eu te amo 💕</p>
+
+    <details>
+      <summary>Na verdade era aqui! 🎁</summary>
+      <p>
+        💌 <strong>THAMIRES</strong>, meu amor, minha vida, simplesmente meu tudo. Eu gostaria de dizer que você é uma pessoa tão incrível, tão admirável, você me trata tão bem e com tanto carinho. Eu sei que às vezes as coisas não são fáceis, mas eu quero te dizer que estou tentando ser uma pessoa melhor em todos os aspectos, e tudo por SUA causa. Você é deslumbrante, sem palavras ksks. Eu te amo mil milhões 💖
+      </p>
+      <img src="fotao.jpeg" alt="Surpresa" width="200">
+      <h3>Olha esse fotão, c tá doidooo</h3>
+    </details>
+  </details>
+
+  <br>
+
+  <a href="slk.mp4" target="_blank" class="btn">Clique por último se quiser rir! 🎥</a>
+
+  <h1 style="font-size: 40px;">💞 Forever juntos! 💞</h1>
+  <p class="footer-msg">Foi muito simples, mas feito com muito coração, paixão e amor. 💞</p>
+  <p>acabou já 😢</p>
+
+  <!-- JS dos corações -->
+  <script>
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.top = "100vh";
+      heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }, 300);
+  </script>
+
+</body>
+</html>
